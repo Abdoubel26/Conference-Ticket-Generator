@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  --Neutral100: hsl(0, 0%, 100%);
+  --Neutral300: hsl(252, 6%, 83%);
+  --Neutral00: hsl(245, 15%, 58%);
+  --Neutral700: hsl(245, 19%, 35%);
+  --Neutral900: hsl(248, 70%, 10%);
+  --Orange500: hsl(7, 88%, 67%);
+  --Orange700: hsl(7, 71%, 60%);
+  --gradient: linear-gradient(to right ,hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background: url("assets/images/background-desktop.png") no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Neutral100);
+}
+
+
+.codingConfLogo {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--Neutral300);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+
+.upload-avatar-label {
+    margin-bottom: 2px;
+    height: 25px;
+    width: 60px;
+}
+
+.upload-avatar-label h4 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-weight: 300;
+}
+
+
+
+
+.upload-avatar {
+    font-size: 1rem;
+    color: var(--Neutral300);
+    justify-content: flex-start;
+    border: 1px dashed var(--Neutral300);
+    border-radius: 15px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background: hsla(0, 0%, 100%, 0.121);
+}
+
+
+.upload-instructions {
+    font-size: 0.875rem;
+    color: var(--Neutral300);
+    margin-bottom: 12px;
+    text-align: center;
+    margin-top: 2px;
+    bottom: 425px;
+    left: 0;
+    position: absolute;
+}
+
+#full-name-label {
+    margin-top: 40px;
+}
+
+.info-icon {
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.input-div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+#full-name {
+    margin-bottom: 12px;
+    height: 40px;
+    background-color: hsla(0, 0%, 100%, 0.121);
+    border: 1px solid var(--Neutral300);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: var(--Neutral700);
+}
+
+
+
+#full-name:not(:placeholder-shown),
+#email:not(:placeholder-shown),
+#github-username:not(:placeholder-shown),
+#full-name:focus, #email:focus, 
+#github-username:focus {
+    outline: none;
+    color: var(--Neutral100);
+}
+
+#full-name:focus, #email:focus, 
+#github-username:focus {
+    border-color: var(--Neutral100);
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+#email {
+    margin-bottom: 12px;
+    height: 40px;
+    background-color: hsla(0, 0%, 100%, 0.121);
+    border: 1px solid var(--Neutral300);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: var(--Neutral700);
+}
+
+
+#github-username {
+    margin-bottom: 12px;
+    height: 40px;
+    background-color: hsla(0, 0%, 100%, 0.121);
+    border: 1px solid var(--Neutral300);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: var(--Neutral700);
+}
+
+
+
+#generate-ticket {
+    background: var(--Orange500);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--Neutral900);
+    cursor: pointer;
+}
+
+
+#generate-ticket:hover {
+    background: var(--Orange700);
+}
+
+#generate-ticket:active {
+    background: var(--Orange500);
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.results {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results h1 {
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.results .description{
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+#ticket-name {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ticket-email {
+    color: var(--Orange500);
+}
+
+.ticket{
+    background: url(/assets/images/pattern-ticket.svg);
+    background-size: contain;
+    width: 398px;
+    height: 186px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.ticket .logo {
+    width: 250px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.ticket p {
+    margin: 0;
+    margin-left: 70px;
+    color: var(--Neutral300);
+}
+
+.ticket .avatar {
+    bottom: 5%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.ticket .name {
+    position: absolute;
+    bottom: 23%;
+    left: 3%;
+    font-size: 1.7rem;
+    color: var(--Neutral100);
+} 
+
+.ticket .github-icon {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.ticket .email {
+    position: absolute;
+    bottom: 12%;
+    left: 9%;
+    color: var(--Neutral300);
+}
+
+.ticket-id {
+    color: var(--Neutral300);
+    font-size: 1.7em;
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 80px;
+    right: -5px;
+}
+
+
+.effect1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.effect2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.effect3{
+    position: absolute;
+    bottom: 25vh;
+    left: 60vw;
+    width: 15%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.effect4{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2; 
+    height: 100%;   
+}
+
+.effect5{
+    position: absolute;
+    bottom: -50vh;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+
+
+@media (max-width: 375px) and (min-width: 320px) {
+    body {
+        background: url("assets/images/background-mobile.png") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;    
+    }
+    .effect2 {
+        right: -160vw;
+        top: 10vh;
+    }
+
+    .codingConfLogo {
+        margin-left: 140vw;
+    }
+
+    .upload-avatar {
+        width: 90%;
+        height: 200px;
+    }
+
+    .input-div {
+        width: 90%;
+    }
+    .upload-instructions {
+        width: 90%;
+        bottom: 410px
+    }
+    #generate-ticket {
+        width: 90%;
+    }
+    .ticket {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .results {
+    display: flex;
+    padding: 1rem;
+    margin-left: 140vw;
+
+    }
+    .ticket {
+        padding: 10px;
+    }
+    .effect1 {
+        display: none;
+    }
+    .effect5 {
+        display: block;
+        bottom: -160vh;
+    }
+      .results h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 40px;
+        width: 250vw;
+    }
+    .results .description{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .effect3 {
+        top: 75vh;
+        left: 155vw;
+        width: 50vw;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 376px) {
+    body {
+        background: url("assets/images/background-tablet.png") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .results .description{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .effect2 {
+        right: -90vw;
+        top: 10vh;
+    }
+    .upload-avatar {
+        width: 90%;
+        height: 200px;
+    }
+
+    .input-div {
+        width: 90%;
+    }
+    .upload-instructions {
+        width: 90%;
+        bottom: 410px
+    }
+    #generate-ticket {
+        width: 90%;
+    }
+    .results h1{
+        text-align: center;
+        margin-bottom: 40px;
+        margin-left: 20vw;
+    }
+    .results .description {
+        text-align: center;
+        font-size: 1.3em;
+        margin-left: 10vw;
+    }
+    .results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 75vw;
+    }
+    .ticket{
+        margin-left: 10vw;
+    }
+    .codingConfLogo {
+        margin-left: 75vw;
+    }
+    .effect1 {
+        display: none;
+    }
+    .effect5 {
+        display: block;
+        bottom: -90vh;
+        width: 80vw;
+    }
+    .effect4 {
+        top: -20vh;
+        height: 100%;
+    }
+    .effect3 {
+        top: 73vh;
+        left: 120vw;
+        width: 40vw;
+    }
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    color: var(--Neutral300);
+    transition: 200ms ease;
+}
+.attribution:hover {
+    opacity: 1;
+}
+.attribution a{
+    color: var(--Orange500);
+}
+.attribution a:hover {
+    color: var(--Orange700);
+}

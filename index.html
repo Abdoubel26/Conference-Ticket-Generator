@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <img src="assets/images/logo-full.svg" class="codingConfLogo">
+
+  <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+
+  <p class="description">Secure your spot at next year's biggest coding conference.</p>
+
+  <form>
+    <div class="upload-avatar-label">
+      <h4 >Upload Avatar</h4>
+    </div>
+
+
+    <div class="upload-avatar"> 
+      <img src="assets/images/icon-upload.svg" alt="Upload Icon">
+      Drag and drop or click to upload
+    </div>
+    <p class="upload-instructions"><img src="assets/images/icon-info.svg" class="info-icon"> Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+    <div class="input-div">
+    <label for="full-name" id="full-name-label">Full Name</label>
+    <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+    </div>
+
+    <div class="input-div">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    </div>
+
+    <div class="input-div">
+      <label for="github-username">GitHub Username</label>
+      <input type="text" id="github-username" name="github-username" placeholder="@yourusername" required>
+    </div>
+
+    <div class="input-div">
+    <button type="submit" id="generate-ticket">Generate My Ticket</button>
+  </div>
+  </form>
+
+
+
+
+
+  <!-- Generated tickets starts -->
+  <div class="results">
+
+
+
+    <h1>Congrats, <span id="ticket-name">Abdou Belounis</span>! Your ticket is ready.</h1>
+
+    <p class="description">We've emailed your ticket to <span id="ticket-email">example@email.com</span> and will send updates in the run up to the event.</p>
+
+
+
+  <div class="ticket hidden">
+    <img src="assets/images/logo-full.svg" class="logo">
+    <p>Jan 31, 2025 / Austin, TX</p>
+
+    <img src="assets/images/image-avatar.jpg" class="avatar" alt="User Avatar">
+      <p class="name">Abdou Belounis</p>
+      <img src="assets/images/icon-github.svg" class="github-icon"><p class="email">Abdoubel26</p>
+      <span class="ticket-id">#82507</span>
+  </div>
+  <div class="effect-container">
+  <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="effect1">
+  <img src="assets/images/pattern-squiggly-line-top.svg" class="effect2">
+  <img src="assets/images/pattern-circle.svg" class="effect3">
+  <img src="assets/images/pattern-lines.svg" class="effect4">
+  <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" class="effect5">
+  </div>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/Abdoubel26">Abdou Belounis</a>.</p>
+  </div>
+</div>
+</body>
+</html>
