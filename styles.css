@@ -442,12 +442,12 @@ h1 {
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 5vh;
-        width: 70vw;
+        width: 90vw;
     }
     .results .description{
         text-align: center;
-        font-size: 0.8em;
-        color: black;
+        font-size: 1em;
+        width: 80vw;
     }
     .effect3 {
         top: 75vh;
