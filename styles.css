@@ -24,6 +24,7 @@ html, body {
     height: 100dvh;
     min-height: 100dvh;
     width: 100vw;
+    min-width: 100dvw;
     margin: 0;
     padding: 0;
 }
@@ -380,6 +381,7 @@ h1 {
     .effect2 {
         right: -160vw;
         top: 10vh;
+        width: 2vw;
     }
     .upload-avatar {
         width: 90%;
@@ -421,12 +423,13 @@ h1 {
         display: block;
         bottom: 0;
         left: 0;
+        width: 2vw;
     }
       .results h1{
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 5vh;
-        width: 250vw;
+        width: 70vw;
     }
     .results .description{
         text-align: center;
@@ -435,7 +438,7 @@ h1 {
     .effect3 {
         top: 75vh;
         left: 155vw;
-        width: 50vw;
+        width: 5vw;
     }
 }
 
@@ -461,6 +464,7 @@ h1 {
     .effect2 {
         right: 0;
         top: 10vh;
+        width: 2vw;
     }
     .upload-avatar {
         width: 90%;
@@ -511,16 +515,17 @@ h1 {
     .effect5 {
         display: block;
         bottom: -90vh;
-        width: 80vw;
+        width: 2vw;
     }
     .effect4 {
         top: -20vh;
         height: 100%;
+        width: 1vw;
     }
     .effect3 {
         top: 68vh;
         left: 70vw;
-        width: 27vw;
+        width: 7vw;
     }
     .codingConfLogo {
         padding: 0;
