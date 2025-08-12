@@ -423,9 +423,10 @@ h1 {
     }
     .ticket {
         padding: 10px;
+        width: 58.5vw;
     }
     .ticket .logo {
-        width: 60vw;
+        width: 30vw;
         left: 0;
         top: 0;
     }
