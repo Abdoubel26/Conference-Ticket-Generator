@@ -389,7 +389,8 @@ h1 {
     }
     .effect5 {
         display: block;
-        bottom: -160vh;
+        bottom: 0;
+        left: 0;
     }
       .results h1{
         text-align: center;
