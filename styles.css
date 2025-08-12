@@ -38,7 +38,6 @@ body {
     align-items: stretch;
     justify-content: stretch;
     color: var(--Neutral100);
-    border: 2px solid var(--Neutral300);
     height: 100dvh;
     min-height: 100dvh;
     min-width: 100vw;
@@ -418,6 +417,14 @@ h1 {
         padding: 10px;
         width: 70vw;
     }
+
+    .ticket .avatar {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 10px;
+        position: absolute;
+    }
+
     .results {
     display: flex;
     padding: 1rem;
