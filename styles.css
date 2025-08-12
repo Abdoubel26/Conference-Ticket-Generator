@@ -269,7 +269,7 @@ h1 {
 
 .ticket{
     background: url(/assets/images/pattern-ticket.svg) center center no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 30vw;
     height: 30vh;
     padding: 5px;
