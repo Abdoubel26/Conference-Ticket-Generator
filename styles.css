@@ -425,8 +425,8 @@ h1 {
     }
     .ticket .logo {
         width: 30vw;
-        left: 0;
-        top: 0;
+        left: -10vw;
+        top: -2vw;
     }
     .effect1 {
         display: none;
