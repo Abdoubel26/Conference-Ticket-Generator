@@ -419,9 +419,9 @@ h1 {
     }
 
     .ticket .avatar {
-        width: 15vw;
-        height: 15vw;
-        border-radius: 10px;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 2vw;
         position: absolute;
     }
 
