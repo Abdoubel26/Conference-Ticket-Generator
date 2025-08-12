@@ -37,6 +37,7 @@ body {
     justify-content: center;
     color: var(--Neutral100);
     border: 2px solid var(--Neutral300);
+    flex: 1 1 auto;
 }
 
 
@@ -52,7 +53,7 @@ body::before {
 }
 
 .codingConfLogo {
-    margin: 20px;
+    margin: 5%;
 }
 
 form {
@@ -61,19 +62,19 @@ form {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 40px;
+    margin-top: 5vh;
 }
 
 h1 {
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 4vh;
     text-align: center;
 }
 
 .description {
     font-size: 1rem;
     color: var(--Neutral300);
-    margin-bottom: 24px;
+    margin-bottom: 5vh;
     text-align: center;
 }
 
@@ -124,7 +125,7 @@ h1 {
 }
 
 #full-name-label {
-    margin-top: 40px;
+    margin-top: 10vh;
 }
 
 .info-icon {
@@ -223,6 +224,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 1 auto;
 }
 
 .results h1 {
@@ -233,7 +235,7 @@ h1 {
 
 .results .description{
     width: 500px;
-    margin-bottom: 60px;
+    margin-bottom: 10vh;
 }
 
 #ticket-name {
@@ -266,7 +268,7 @@ h1 {
 
 .ticket p {
     margin: 0;
-    margin-left: 70px;
+    margin-left: 5vw;
     color: var(--Neutral300);
 }
 
@@ -356,17 +358,15 @@ h1 {
     body {
         background: url("assets/images/background-mobile.png") no-repeat center center fixed;
         background-size: cover;
-        display: flex;    
+        display: flex; 
+        height: 100vh;
+        min-height: 100vh;
+        width: 100vw;
     }
     .effect2 {
         right: -160vw;
         top: 10vh;
     }
-
-    .codingConfLogo {
-        margin-left: 140vw;
-    }
-
     .upload-avatar {
         width: 90%;
         height: 200px;
@@ -390,7 +390,6 @@ h1 {
     .results {
     display: flex;
     padding: 1rem;
-    margin-left: 140vw;
 
     }
     .ticket {
@@ -412,7 +411,7 @@ h1 {
       .results h1{
         text-align: center;
         font-size: 3em;
-        margin-bottom: 40px;
+        margin-bottom: 5vh;
         width: 250vw;
     }
     .results .description{
@@ -431,6 +430,9 @@ h1 {
     body {
         background: url("assets/images/background-tablet.png") no-repeat center center;
         background-size: cover;
+        height: 100vh;
+        min-height: 100vh;
+        width: 100vw;
     }
     body::before {
     background: url('assets/images/background-tablet.png') center/cover no-repeat;
@@ -462,7 +464,7 @@ h1 {
     }
     .results h1{
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 5vh;
     }
     .results .description {
         text-align: center;
