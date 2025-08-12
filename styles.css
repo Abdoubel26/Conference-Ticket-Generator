@@ -20,8 +20,14 @@
     font-family: 'Inconsolata', monospace;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background: url("assets/images/background-desktop.png") no-repeat center center fixed;
+    background: url("assets/images/background-desktop.png") no-repeat center center;
     background-size: cover;
     overflow-x: hidden;
     display: flex;
@@ -29,6 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--Neutral100);
+    border: 2px solid var(--Neutral300);
 }
 
 
@@ -230,8 +237,8 @@ h1 {
 .ticket{
     background: url(/assets/images/pattern-ticket.svg);
     background-size: contain;
-    width: 398px;
-    height: 186px;
+    width: 30vw;
+    height: 30vh;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -292,7 +299,7 @@ h1 {
 
 
 .effect1{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: -1;
@@ -300,14 +307,14 @@ h1 {
 
 
 .effect2{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: -1;
 }
 
 .effect3{
-    position: absolute;
+    position: fixed;
     bottom: 25vh;
     left: 60vw;
     width: 15%;
@@ -316,7 +323,7 @@ h1 {
 }
 
 .effect4{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: -2; 
@@ -324,7 +331,7 @@ h1 {
 }
 
 .effect5{
-    position: absolute;
+    position: fixed;
     bottom: -50vh;
     left: 0;
     z-index: -1;
@@ -335,7 +342,7 @@ h1 {
 
 @media (max-width: 375px) and (min-width: 320px) {
     body {
-        background: url("assets/images/background-mobile.png") no-repeat center center fixed;
+        background: url("assets/images/background-mobile.png") no-repeat center center;
         background-size: cover;
         display: flex;    
     }
@@ -402,9 +409,9 @@ h1 {
 }
 
 
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 768px) and (min-width: 375px) {
     body {
-        background: url("assets/images/background-tablet.png") no-repeat center center fixed;
+        background: url("assets/images/background-tablet.png") no-repeat center center;
         background-size: cover;
     }
 
@@ -414,7 +421,7 @@ h1 {
     }
 
     .effect2 {
-        right: -90vw;
+        right: 0;
         top: 10vh;
     }
     .upload-avatar {
@@ -434,26 +441,31 @@ h1 {
     }
     .results h1{
         text-align: center;
-        margin-bottom: 40px;
-        margin-left: 20vw;
+        margin-bottom: 30px;
     }
     .results .description {
         text-align: center;
         font-size: 1.3em;
-        margin-left: 10vw;
     }
     .results {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin-left: 75vw;
     }
     .ticket{
-        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 58.5vw;
+        height: 23.5vh;
+        border: 1px solid var(--Neutral300);
+
     }
-    .codingConfLogo {
-        margin-left: 75vw;
+    .ticket .logo {
+        width: 30vw;
+        padding-left: 0;
+        padding-top: 0;
     }
     .effect1 {
         display: none;
@@ -468,9 +480,13 @@ h1 {
         height: 100%;
     }
     .effect3 {
-        top: 73vh;
-        left: 120vw;
-        width: 40vw;
+        top: 68vh;
+        left: 70vw;
+        width: 27vw;
+    }
+    .codingConfLogo {
+        padding: 0;
+        margin: 0;
     }
 }
 
